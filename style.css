@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: Comic Sans MS, sans-serif;
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+h1 {
+  font-size: 3rem;
+  animation: bounce 1.5s infinite alternate;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: #ff6f91;
+  color: white;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
