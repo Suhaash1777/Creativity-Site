@@ -44,3 +44,55 @@ body {
 .nav-buttons {
   margin-bottom: 20px;
 }
+
+/* Fitness Page Specific Styles */
+
+/* Specific background for the fitness page */
+body.fitness-page {
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333;
+}
+
+/* Fitness section container style */
+.fitness-container {
+  text-align: center;
+  margin: auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+/* Styling for fitness-specific text */
+.fitness-container h1 {
+  color: #ff6347; /* Tomato red for fitness header */
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.fitness-container p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+/* Fitness image styling */
+.fitness-container img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Fitness Page Buttons */
+.fitness-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #32cd32; /* Lime green button */
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fitness-button:hover {
+  background-color: #28a745; /* Darker green when hovered */
+}
