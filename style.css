@@ -1,34 +1,46 @@
-/* Use your fun Google Font */
+/* Apply comic font and center text */
 body {
   font-family: 'Comic Neue', cursive;
-  background-color: #fff0f5; /* Light pink */
-  color: #333;
   text-align: center;
-  padding: 20px;
+  margin: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/80-lines.png');
+  background-color: #fffdee;
+  color: #333;
 }
 
-/* Main container spacing */
+/* Keep content centered */
 .container {
   max-width: 800px;
   margin: auto;
+  padding: 20px;
 }
 
-/* Button styles for both blog and click me */
-.button {
+/* Buttons and navigation links */
+.button, .nav-buttons a {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #ff69b4; /* Hot pink */
-  color: white;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: black;
+  border-radius: 12px;
   font-weight: bold;
-  border-radius: 20px;
   text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-/* Hover effect for buttons */
-.button:hover {
-  background-color: #ff85c1;
+.button:hover, .nav-buttons a:hover {
   transform: scale(1.1);
+}
+
+/* Caption text under GIF */
+.gif-caption {
+  font-size: 1.2em;
+  margin-top: 15px;
+  font-style: italic;
+  color: #444;
+}
+
+/* Organize nav buttons */
+.nav-buttons {
+  margin-bottom: 20px;
 }
