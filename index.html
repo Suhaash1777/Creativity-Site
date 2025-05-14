@@ -2,36 +2,39 @@
 <html lang="en">
 
 <head>
-  <!-- Title that appears in the browser tab -->
   <title>Creative Space</title>
 
-  <!-- Meta for mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Link to external CSS file for your custom styles -->
+  <!-- Link to your custom CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- 🎨 Google Fonts: Add a fun font -->
+  <!-- Google Fonts: Comic Neue -->
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 
-  <!-- ✨ Animate.css: Prebuilt CSS animations (fadeIn, bounce, etc.) -->
+  <!-- Animate.css for animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <!-- 🚀 AOS: Animate on Scroll library -->
+  <!-- AOS scroll animation library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Main container for content -->
+  <!-- Main container for the page -->
   <div class="container">
 
-    <!-- Main heading with emojis and entry animation from Animate.css -->
+    <!-- Animated heading -->
     <h1 class="animate__animated animate__bounce">🎉 Welcome to My Fun Site 🎉</h1>
 
-    <!-- Intro paragraph with emojis -->
-    <p>This is my goofy zone 😜💻🍕✨</p>
+    <!-- Navigation buttons under heading -->
+    <div class="nav-buttons" data-aos="fade-up">
+      <a href="blog.html" class="button">📝 Read My Blog</a>
+      <a href="fitness.html" class="button">💪 Fitness</a>
+      <a href="brainrot.html" class="button">🧠 Brain Rot</a>
+      <div class="button" onclick="sayHi()">👋 Click Me!</div>
+    </div>
 
-    <!-- Fun GIF image from Giphy -->
+    <!-- Funny GIF -->
     <img 
       src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZiN3luMjduNXhjeG9zaGtsbHFzNjNzOXZ2bmV6OXF1NjgyZWxiMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xM1CgbgznSyDC/giphy.gif" 
       width="300" 
@@ -39,24 +42,20 @@
       data-aos="zoom-in"
     />
 
-    <!-- Button link to another page called blog.html -->
-    <a href="blog.html" class="button" data-aos="fade-up">📝 Read My Blog</a>
-
-    <!-- A fun button that shows an alert message using JavaScript -->
-    <div class="button" onclick="sayHi()" data-aos="fade-up" data-aos-delay="200">
-      👋 Click Me!
-    </div>
+    <!-- Text below GIF -->
+    <p class="gif-caption" data-aos="fade-up">This GIF perfectly captures my chaotic energy 🕺✨</p>
 
   </div>
 
-  <!-- JavaScript for interactivity (like the sayHi function) -->
+  <!-- JavaScript function for "Click Me!" button -->
   <script src="script.js"></script>
 
-  <!-- AOS library JavaScript to trigger scroll animations -->
+  <!-- AOS animation functionality -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init(); // ✅ Initialize scroll animations
+    AOS.init(); // Start AOS animations
   </script>
+
 </body>
 
 </html>
