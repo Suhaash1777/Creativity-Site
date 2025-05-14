@@ -1,3 +1,4 @@
+// A function that shows an alert when the "Click Me!" button is clicked
 function sayHi() {
-  alert("🎈 You clicked the button! 🎈");
+  alert("Hi there! 👋 You're awesome!");
 }
